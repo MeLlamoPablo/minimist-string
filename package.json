@@ -1,0 +1,22 @@
+{
+  "name": "minimist-string",
+  "version": "1.0.0",
+  "description": "A minimist extension to parse command line sentences as strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "minimist",
+    "string"
+  ],
+  "author": "Pablo Rodríguez <pabloviolin8@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.1.0"
+  }
+}
