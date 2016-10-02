@@ -1,20 +1,20 @@
 # minimist-string
 
-`minimist-string` is a [minimist](https://github.com/substack/minimist) wrapper that is able to pasrse command line sentences as strings. The problem with `minimist` is that you need to give the arguments in an array with every argument (as in node's `process.argv`). The following wouldn't work:
+`minimist-string` is a [minimist](https://github.com/substack/minimist) wrapper that is able to pasrse command line sentences as strings. The problem with `minimist` is that you need to give the arguments in an array with every argument in separated strings (as in node's `process.argv`). The following wouldn't work:
 
 ```javascript
-console.log(minimist(['foo --bar "Hello!']));
-// { _: [ 'foo --bar "Hello!' ] } wich is not what we want
+console.log(minimist(['foo --bar "Hello!"']));
+// { _: [ 'foo --bar "Hello!"' ] } wich is not what we want
 ```
 
 The next logical step is doing:
 
 ```javascript
-console.log(minimist('foo --bar "Hello!'.split(' ')));
-// { _: [ 'foo' ], bar: '"Hello!' }
+console.log(minimist('foo --bar "Hello!"'.split(' ')));
+// { _: [ 'foo' ], bar: '"Hello!"' }
 ```
 
-That actually returns what we expect. The problem is when the user-defined string has spaces:
+That actually returns what we expect. The problem comes when the user-defined string has spaces:
 
 ```javascript
 console.log(minimist('foo --bar "Hello world!"'.split(' ')));

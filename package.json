@@ -18,5 +18,16 @@
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^3.1.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeLlamoPablo/minimist-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MeLlamoPablo/minimist-string/issues"
+  },
+  "homepage": "https://github.com/MeLlamoPablo/minimist-string#readme"
 }
