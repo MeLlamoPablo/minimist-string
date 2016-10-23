@@ -174,7 +174,6 @@ module.exports = function(input) {
 							result.push(pieces[i]);
 							unclosed_quote = true;
 						} else if (countQuotes(pieces[i], quote_char) === 2) {
-							debugger;
 							// We have two quotes. However, we might have information after the
 							// closing quote that doesn't belong to the string, so we split:
 							var split = splitPiece(pieces[i], quote_char);
@@ -220,7 +219,6 @@ module.exports = function(input) {
 			return result;
 		};
 
-		debugger;
 		var wrong_pieces = input.split(' ');
 
 		var good_pieces = solveQuotes(wrong_pieces, '"');

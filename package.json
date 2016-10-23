@@ -1,6 +1,6 @@
 {
   "name": "minimist-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimist extension to parse command line sentences as strings",
   "main": "index.js",
   "scripts": {
